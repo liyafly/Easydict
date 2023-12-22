@@ -18,6 +18,7 @@
 #import "AppDelegate+EZURLScheme.h"
 #import <Sparkle/SPUUpdaterDelegate.h>
 #import <Sparkle/SPUStandardUserDriverDelegate.h>
+#import "Easydict-Swift.h"
 
 @interface AppDelegate () <SPUUpdaterDelegate, SPUStandardUserDriverDelegate>
 
@@ -44,6 +45,10 @@
     
     // Change App icon manually.
     //    NSApplication.sharedApplication.applicationIconImage = [NSImage imageNamed:@"white-black-icon"];
+    
+    [EZCaiyunService testGeminiWithCompletionHandler:^{
+        
+    }];
 }
 
 /// Auto set up app language.
